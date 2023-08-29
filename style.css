@@ -1,0 +1,72 @@
+@font-face {
+  font-family: "Kharkiv Tone";
+  src: url(Kharkiv\ Tone\ 04.10.2020.ttf);
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  font-family: "Kharkiv Tone";
+  background: linear-gradient(90deg, rgba(16,16,16,1) 100%, rgba(24,32,48,1) 100%);
+}
+
+.block {
+  background-image: url(/img/Logo\ Background.svg);
+  max-width: 1600px;
+  height: 100vh;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: right; 
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 64px;
+}
+
+a {
+  background: url(/img/Telegram\ 128\ 2.svg);
+  width: 64px;
+  height: 64px;
+}
+
+a:hover {
+  background: url(/img/Telegram\ 128\ Hover.svg);
+}
+
+h1 {
+  text-transform: lowercase;
+  font-size: calc(0.5em + 7vw);
+}
+
+p {
+  color: #40E868;
+  font-size: calc(0.5em + 1vw);
+  margin-bottom: 15vh;
+  line-height: calc(0.5em + 3vh);
+}
+
+button {
+  background-color: #40E868;
+  color: #FFFFFF;
+  border-radius: 48px;
+  padding: 20px 60px;
+  font-size: 34px;
+  font-family: inherit;
+}
+
+button:hover {
+  box-shadow: 20px 5px 30px #40E868;
+}
+
+@media screen and (max-width: 450px) {
+  button {
+    font-size: 20px;
+    padding: 15px 40px;
+  }
+  main {
+    margin: 0 30px;
+  }
+}  
+
